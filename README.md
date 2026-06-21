@@ -57,3 +57,35 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# 🛒 Mi Tienda Tecsup - Pasarela de Pagos Seguros (Stripe & Telegram)
+
+¡Hola! Este es el repositorio de mi proyecto para el laboratorio de desarrollo de software en Tecsup. He construido esta plataforma de comercio electrónico desde cero utilizando **Laravel**, enfocándome en la simulación de compras de componentes tecnológicos y hardware de IoT (como Kits de desarrollo ESP32, Arduinos, Sensores de temperatura, etc.).
+
+En este proyecto configuré e integré con éxito dos APIs externas de manera profesional:
+1. **Stripe API (Modo Prueba):** Para procesar pagos simulados con tarjetas de crédito directamente desde el formulario de la tienda.
+2. **Telegram Bot API:** Para recibir notificaciones automáticas y alertas en un grupo administrativo cada vez que un cliente realiza un pago de forma exitosa.
+
+Además, añadí un **Selector Rápido de Tarjetas** con JavaScript justo arriba del diseño de la tarjeta azul. Con esto puedo simular al instante tanto los pagos exitosos como los errores (tarjetas rechazadas) solicitados en la guía del laboratorio sin tener que escribir los números de prueba a mano.
+
+---
+
+## 🛠️ Requisitos del Entorno
+
+Para poder desarrollar y ejecutar este proyecto, instalé en mi entorno local:
+- PHP >= 8.1
+- Composer (Gestor de dependencias de PHP)
+- MySQL (Base de datos)
+- Node.js & NPM (Para compilar los estilos)
+
+---
+
+## 🚀 Cómo Estructuré e Instalé mi Proyecto (Desde Cero)
+
+Estos fueron los pasos exactos que seguí en mi terminal para dar vida al proyecto y configurar la estructura base:
+
+### 1. Creación del proyecto e instalación de herramientas
+Primero, creé el proyecto base de Laravel con Composer e instalé las librerías necesarias para el backend:
+```bash
+laravel new tienda-tecsup
+cd tienda-tecsup
+composer install
